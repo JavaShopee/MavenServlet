@@ -13,5 +13,10 @@ pipeline {
                 echo 'HEllo World..Build..'
             }
         }
+        stage('Deploy') {
+            steps {
+                echo 'HEllo World..Deployed..'
+            }
+        }
     }
 }
