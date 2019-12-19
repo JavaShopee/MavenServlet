@@ -4,7 +4,7 @@ job('first-maven-project-via-dsl') {
         github('https://github.com/JavaShopee/MavenServlet.git', 'master')
     }
     triggers {
-        scm(* * * * *)
+        scm('* * * * *')
     }
     steps {
         maven('clean package', 'MavenServlet/pom.xml')
